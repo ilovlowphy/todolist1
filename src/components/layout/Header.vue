@@ -1,8 +1,11 @@
 <template>
-    <div id="nav">
-        <router-link to="/">Home</router-link> |
-        <router-link to="/about">About</router-link>
-    </div>
+    <header class="header">
+        <h1>Todo List</h1>
+        <div id="nav">
+            <router-link to="/">Home</router-link> |
+            <router-link to="/about">About</router-link>
+        </div>
+    </header>
 </template>
 
 <script>
@@ -12,5 +15,15 @@ export default {
 </script>
 
 <style scoped>
-
+.header {
+    background: #666;
+    color: #fff;
+    margin:0;
+    text-align: center;
+}
+.header a{
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+}
 </style>
